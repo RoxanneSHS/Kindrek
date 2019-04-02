@@ -1,0 +1,8 @@
+IF
+InPartyAllowDead("Kindrek")
+Global("KindrekSummoned","GLOBAL",0)
+THEN
+RESPONSE #100
+ActionOverride("Kindrek",ChangeAIScript("KINDRE25",OVERRIDE))
+SetGlobal("KindrekSummoned","GLOBAL",2)
+END

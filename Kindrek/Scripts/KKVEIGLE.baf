@@ -1,0 +1,9 @@
+IF
+ See("Kindrek")
+ Global("KindrekVeigleTalk","LOCALS",0)
+ CombatCounter(0)
+THEN
+RESPONSE #100
+ SetGlobal("KindrekVeigleTalk","LOCALS",1)
+ StartDialogNoSet("Kindrek")
+END

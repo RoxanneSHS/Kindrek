@@ -1,0 +1,25 @@
+IF
+  Global("CianVampLeaves","LOCALS",0)
+  Global("BetrayedKindrekToCian","GLOBAL",1)
+THEN
+  RESPONSE #100
+  EscapeArea()
+  SetGlobal("CianVampLeaves","LOCALS",1)
+END
+
+
+
+IF
+ Global("KindrekCianFight","GLOBAL",1)
+ Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+ Enemy()
+END
+
+IF
+ See(NearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+   AttackReevaluate(NearestEnemyOf(Myself),15)
+END

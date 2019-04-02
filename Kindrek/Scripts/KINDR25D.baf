@@ -1,0 +1,33 @@
+IF
+  Global("KindrekDestroyDisplacementCloakTOB","LOCALS",1)
+  See(Player1)
+  CombatCounter(0)
+THEN
+ RESPONSE #100
+  SetGlobal("KindrekDestroyDisplacementCloakTOB","LOCALS",2)
+  StartDialogueNoSet(Player1)
+END
+
+
+
+IF
+  Global("KindrekDestroyReflectionCloakTOB","LOCALS",1)
+  See(Player1)
+  CombatCounter(0)
+THEN
+ RESPONSE #100
+  SetGlobal("KindrekDestroyReflectionCloakTOB","LOCALS",2)
+  StartDialogueNoSet(Player1)
+END
+
+
+
+IF
+  Global("KindrekDestroyMirroringCloakTOB","LOCALS",1)
+  See(Player1)
+  CombatCounter(0)
+THEN
+ RESPONSE #100
+  SetGlobal("KindrekDestroyMirroringCloakTOB","LOCALS",2)
+  StartDialogueNoSet(Player1)
+END

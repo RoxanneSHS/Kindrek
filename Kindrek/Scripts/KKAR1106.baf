@@ -1,0 +1,19 @@
+IF
+  InParty("Kindrek")
+  Global("AcceptedVeigleQuest","GLOBAL",1)
+  Global("CianExists","AR1106",0)
+THEN
+ RESPONSE #100
+  SetGlobal("CianExists","AR1106",1)
+  CreateCreature("KKCIAN",[955.545],0)
+END
+
+IF
+  Global("AcceptedVeigleQuest","GLOBAL",1)
+  GlobalLT("CianVampSpawned","AR1106",5)
+  InParty("Kindrek")
+THEN
+ RESPONSE #100
+  CreateCreature("CIANVAMP",[700.419],13)
+  IncrementGlobal("CianVampSpawned","AR1106",1)
+END

@@ -1,0 +1,21 @@
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("Kindrek")
+   Global("KindrekBio","GLOBAL",0)
+   Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+   RESPONSE #100
+      SetGlobal("KindrekBio","GLOBAL",1)
+      TextScreen("KINDAND1")
+END
+
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("Kindrek")
+   Global("KindrekBio","GLOBAL",0)
+   Global("PlayerChoseEssence","GLOBAL",0)
+THEN
+   RESPONSE #100
+      SetGlobal("KindrekBio","GLOBAL",1)
+      TextScreen("KINDAND2")
+END

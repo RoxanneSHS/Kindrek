@@ -1,0 +1,37 @@
+IF
+  Global("KKCIANLeaves","LOCALS",0)
+  Global("BetrayedKindrekToCian","GLOBAL",1)
+THEN
+  RESPONSE #100
+  ReallyForceSpell("KKCIAN",DRYAD_TELEPORT)
+  SetGlobal("KKCIANLeaves","LOCALS",1)
+END
+
+
+IF
+ See("Kindrek")
+ Global("KindrekCianFight","GLOBAL",0)
+ Global("CianSeeKindrek","GLOBAL",0)
+ CombatCounter(0)
+THEN
+RESPONSE #100
+ SetGlobal("CianSeeKindrek","GLOBAL",1)
+ StartDialogNoSet("Kindrek")
+END
+
+
+IF
+ Global("KindrekCianFight","GLOBAL",1)
+ Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+ Enemy()
+END
+
+
+IF
+ See(NearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+   AttackReevaluate(NearestEnemyOf(Myself),15)
+END

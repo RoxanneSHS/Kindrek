@@ -1,0 +1,6189 @@
+IF
+  Global("KindrekSummoned","GLOBAL",1)
+THEN
+ RESPONSE #100
+  StartDialogueNoSet([PC])
+  Wait(1)
+END
+
+
+
+IF
+ InParty(Myself)
+ Detect(Player1)
+ Global("KKLeaveOverPCMageTOB","LOCALS",0)
+OR(3)
+ Class(Player1,MAGE_ALL)
+ Class(Player1,SORCERER)
+ Class(Player1,BARD)
+THEN
+ RESPONSE #100
+ SetGlobal("KKLeaveOverPCMageTOB","LOCALS",1)
+ StartDialogueNoSet(Player1)
+END
+
+
+
+IF
+  InParty("Edwin")
+  Global("KKLeaveOverEdwinTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverEdwinTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+
+IF
+  InParty("Tsujath")
+  Global("KKLeaveOverTsujathaTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverTsujathaTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+
+
+IF
+  InParty("Tashia")
+  Global("KKLeaveOverTashiaTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverTashiaTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+
+
+IF
+  InParty("Zaiya")
+  Global("KKLeaveOverZaiyaTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverZaiyaTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+
+
+IF
+  InParty("J#Kelsey")
+  Global("KKLeaveOverKelseyTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverKelseyTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+IF
+  InParty("Irirenic")
+  Global("KKLeaveOverIrenicusTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKLeaveOverIrenicusTOB","LOCALS",1)
+  Interact(Player1)
+END
+
+
+
+IF
+ HasItem("amul14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("amul28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("amul28")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("arow02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow02")
+END
+
+IF
+ HasItem("arow03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow03")
+END
+
+IF
+ HasItem("arow04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow04")
+END
+
+IF
+ HasItem("arow05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow05")
+END
+
+IF
+ HasItem("arow06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow06")
+END
+
+IF
+ HasItem("arow07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow07")
+END
+
+IF
+ HasItem("arow08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow08")
+END
+
+IF
+ HasItem("arow09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow09")
+END
+
+IF
+ HasItem("arow10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow10")
+END
+
+IF
+ HasItem("arow11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow11")
+END
+
+IF
+ HasItem("arow12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow12")
+END
+
+IF
+ HasItem("arow1a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow1a")
+END
+
+IF
+ HasItem("arow15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("arow15")
+END
+
+IF
+ HasItem("ax1h02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ax1h17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ax1h17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bag04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bag04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bag19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bag19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("belt11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("belt11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14A",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14A")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14B",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14B")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14C",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14C")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14D",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14D")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14E",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14E")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14F",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14F")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14G",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14G")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14H",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14H")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun14I",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun14I")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun27")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun29")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun30")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun30A",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun30A")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun30B",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun30B")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun30C",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun30C")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun30D",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun30D")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun31")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun32",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun32")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun33",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun33")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun34",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun34")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("blun35",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("blun35")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bolt02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt02")
+END
+
+IF
+ HasItem("bolt03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt03")
+END
+
+IF
+ HasItem("bolt04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt04")
+END
+
+IF
+ HasItem("bolt05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt05")
+END
+
+IF
+ HasItem("bolt06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt06")
+END
+
+IF
+ HasItem("bolt07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt07")
+END
+
+IF
+ HasItem("bolt09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bolt09")
+END
+
+IF
+ HasItem("boot01",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot01")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("boot12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("boot12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow19A",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow19A")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow19B",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow19B")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bow99",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bow99")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac01",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac01")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("brac26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("brac26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("bull02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bull02")
+END
+
+IF
+ HasItem("bull03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bull03")
+END
+
+IF
+ HasItem("bull04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bull04")
+END
+
+IF
+ HasItem("bull05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bull05")
+END
+
+IF
+ HasItem("bull06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("bull06")
+END
+
+IF
+ HasItem("chan02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("chan21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("chan21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck01",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck01")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ Global("KindrekDestroyDisplacementCloak","LOCALS",3)
+ HasItem("clck03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ Global("KindrekDestroyReflectionCloak","LOCALS",3)
+ HasItem("clck24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ Global("KindrekDestroyMirroringCloak","LOCALS",3)
+ HasItem("clck26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck27")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck29")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck30")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck31")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("clck32",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("clck32")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("NPARM",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("NPARM")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("xbow18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("xbow18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dagg24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dagg24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("nebdag",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("nebdag")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dart02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dart02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("dart03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dart03")
+END
+
+IF
+ HasItem("dart04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dart04")
+END
+
+IF
+ HasItem("dart08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("dart08")
+END
+
+IF
+ HasItem("stardart",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("stardart")
+END
+
+IF
+ HasItem("halb02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("halb12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("halb12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("hamm12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("hamm12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm27")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm28")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm31")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm32",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm32")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("helm34",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("helm34")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("waaxe",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("waaxe")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("waflail",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("waflail")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wamace",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wamace")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("waninja",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("waninja")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("was2h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("was2h")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wasling",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wasling")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("waspear",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("waspear")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wastaff",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wastaff")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wastar",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wastar")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wawak",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wawak")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("leat24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("leat24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3c",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3c")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3d")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3e")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3f")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3h")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3i")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3j")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3k",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3k")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3l")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3m")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc3a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc3a")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc8j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc8j")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("misc8u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("misc8u")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("miscbc",Myself)
+ Global("KKBlackrazor","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("KKBlackrazor","LOCALS",1)
+  StartDialogueNoSet(Player1)
+END
+
+IF
+ HasItem("miscbc",Myself)
+ Global("KKBlackrazor","LOCALS",2)
+THEN
+ RESPONSE #100
+  DestroyItem("miscbc")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END 
+
+IF
+ HasItem("npmisc1",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("npmisc1")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("npmisc2",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("npmisc2")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("plat23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("plat23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("potn02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn02")
+END
+
+IF
+ HasItem("potn03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn03")
+END
+
+IF
+ HasItem("potn04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn04")
+END
+
+IF
+ HasItem("potn05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn05")
+END
+
+IF
+ HasItem("potn06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn06")
+END
+
+IF
+ HasItem("potn07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn07")
+END
+
+IF
+ HasItem("potn08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn08")
+END
+
+IF
+ HasItem("potn09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn09")
+END
+
+IF
+ HasItem("potn10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn10")
+END
+
+IF
+ HasItem("potn11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn11")
+END
+
+IF
+ HasItem("potn12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn12")
+END
+
+IF
+ HasItem("potn13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn13")
+END
+
+IF
+ HasItem("potn14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn14")
+END
+
+IF
+ HasItem("potn17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn17")
+END
+
+IF
+ HasItem("potn18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn18")
+END
+
+IF
+ HasItem("potn19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn19")
+END
+
+IF
+ HasItem("potn21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn21")
+END
+
+IF
+ HasItem("potn22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn22")
+END
+
+IF
+ HasItem("potn23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn23")
+END
+
+IF
+ HasItem("potn24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn24")
+END
+
+IF
+ HasItem("potn25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn25")
+END
+
+IF
+ HasItem("potn26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn26")
+END
+
+IF
+ HasItem("potn27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn27")
+END
+
+IF
+ HasItem("potn28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn28")
+END
+
+IF
+ HasItem("potn29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn29")
+END
+
+IF
+ HasItem("potn30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn30")
+END
+
+IF
+ HasItem("potn31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn31")
+END
+
+IF
+ HasItem("potn33",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn33")
+END
+
+IF
+ HasItem("potn34",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn34")
+END
+
+IF
+ HasItem("potn35",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn35")
+END
+
+IF
+ HasItem("potn36",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn36")
+END
+
+IF
+ HasItem("potn37",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn37")
+END
+
+IF
+ HasItem("potn38",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn38")
+END
+
+IF
+ HasItem("potn39",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn39")
+END
+
+IF
+ HasItem("potn40",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn40")
+END
+
+IF
+ HasItem("potn41",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn41")
+END
+
+IF
+ HasItem("potn42",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn42")
+END
+
+IF
+ HasItem("potn43",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn43")
+END
+
+IF
+ HasItem("potn44",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn44")
+END
+
+IF
+ HasItem("potn45",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn45")
+END
+
+IF
+ HasItem("potn46",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn46")
+END
+
+IF
+ HasItem("potn52",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn52")
+END
+
+IF
+ HasItem("potn55",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn55")
+END
+
+IF
+ HasItem("potn56",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("potn56")
+END
+
+IF
+ HasItem("quiver01",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver01")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("quiver02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("quiver03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("quiver04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("quiver05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("quiver06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("quiver06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring26",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring26")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring27")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring28")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring29")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring30")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring31")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring33",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring33")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring34",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring34")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring35",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring35")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring36",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring36")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring39",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring39")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring40",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring40")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring41",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring41")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring42",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring42")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring43",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring43")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("ring44",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("ring44")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("rods01",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("rods01")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("rods02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("rods02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("rods04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("rods04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("rods05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("rods05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("rods06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("rods06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("scrl03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl03")
+END
+
+IF
+ HasItem("scrl04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl04")
+END
+
+IF
+ HasItem("scrl05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl05")
+END
+
+IF
+ HasItem("scrl06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl06")
+END
+
+IF
+ HasItem("scrl07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl07")
+END
+
+IF
+ HasItem("scrl08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl08")
+END
+
+IF
+ HasItem("scrl09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl09")
+END
+
+IF
+ HasItem("scrl10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl10")
+END
+
+IF
+ HasItem("scrl11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl11")
+END
+
+IF
+ HasItem("scrl12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl12")
+END
+
+IF
+ HasItem("scrl13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl13")
+END
+
+IF
+ HasItem("scrl14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl14")
+END
+
+IF
+ HasItem("scrl15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl15")
+END
+
+IF
+ HasItem("scrl16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl16")
+END
+
+IF
+ HasItem("scrl17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl17")
+END
+
+IF
+ HasItem("scrl18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl18")
+END
+
+IF
+ HasItem("scrl1b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1b")
+END
+
+IF
+ HasItem("scrl1c",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1c")
+END
+
+IF
+ HasItem("scrl1d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1d")
+END
+
+IF
+ HasItem("scrl1e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1e")
+END
+
+IF
+ HasItem("scrl1f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1f")
+END
+
+IF
+ HasItem("scrl1g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1g")
+END
+
+IF
+ HasItem("scrl1h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1h")
+END
+
+IF
+ HasItem("scrl1i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1i")
+END
+
+IF
+ HasItem("scrl1j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1j")
+END
+
+IF
+ HasItem("scrl1k",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1k")
+END
+
+IF
+ HasItem("scrl1l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1l")
+END
+
+IF
+ HasItem("scrl1m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1m")
+END
+
+IF
+ HasItem("scrl1n",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1n")
+END
+
+IF
+ HasItem("scrl1o",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1o")
+END
+
+IF
+ HasItem("scrl1p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1p")
+END
+
+IF
+ HasItem("scrl1q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1q")
+END
+
+IF
+ HasItem("scrl1s",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1s")
+END
+
+IF
+ HasItem("scrl1t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1t")
+END
+
+IF
+ HasItem("scrl1u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1u")
+END
+
+IF
+ HasItem("scrl1v",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1v")
+END
+
+IF
+ HasItem("scrl1w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1w")
+END
+
+IF
+ HasItem("scrl1x",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1x")
+END
+
+IF
+ HasItem("scrl1y",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1y")
+END
+
+IF
+ HasItem("scrl1z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl1z")
+END
+
+IF
+ HasItem("scrl2a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2a")
+END
+
+IF
+ HasItem("scrl2b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2b")
+END
+
+IF
+ HasItem("scrl2d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2d")
+END
+
+IF
+ HasItem("scrl2e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2e")
+END
+
+IF
+ HasItem("scrl2f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2f")
+END
+
+IF
+ HasItem("scrl2g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2g")
+END
+
+IF
+ HasItem("scrl2h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl2h")
+END
+
+IF
+ HasItem("scrl3g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl3g")
+END
+
+IF
+ HasItem("scrl3h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl3h")
+END
+
+IF
+ HasItem("scrl58",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl58")
+END
+
+IF
+ HasItem("scrl5a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5a")
+END
+
+IF
+ HasItem("scrl5b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5b")
+END
+
+IF
+ HasItem("scrl5d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5d")
+END
+
+IF
+ HasItem("scrl5e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5e")
+END
+
+IF
+ HasItem("scrl5f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5f")
+END
+
+IF
+ HasItem("scrl5g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5g")
+END
+
+IF
+ HasItem("scrl5h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5h")
+END
+
+IF
+ HasItem("scrl5i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5i")
+END
+
+IF
+ HasItem("scrl5w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5w")
+END
+
+IF
+ HasItem("scrl5j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5j")
+END
+
+IF
+ HasItem("scrl5k",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5k")
+END
+
+IF
+ HasItem("scrl5l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5l")
+END
+
+IF
+ HasItem("scrl5m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5m")
+END
+
+IF
+ HasItem("scrl5n",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5n")
+END
+
+IF
+ HasItem("scrl5o",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5o")
+END
+
+IF
+ HasItem("scrl5p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5p")
+END
+
+IF
+ HasItem("scrl5q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5q")
+END
+
+IF
+ HasItem("scrl5t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5t")
+END
+
+IF
+ HasItem("scrl5u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5u")
+END
+
+IF
+ HasItem("scrl5z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl5z")
+END
+
+IF
+ HasItem("scrl66",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl66")
+END
+
+IF
+ HasItem("scrl67",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl67")
+END
+
+IF
+ HasItem("scrl68",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl68")
+END
+
+IF
+ HasItem("scrl69",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl69")
+END
+
+IF
+ HasItem("scrl6d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6d")
+END
+
+IF
+ HasItem("scrl6e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6e")
+END
+
+IF
+ HasItem("scrl6f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6f")
+END
+
+IF
+ HasItem("scrl6g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6g")
+END
+
+IF
+ HasItem("scrl6h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6h")
+END
+
+IF
+ HasItem("scrl6i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6i")
+END
+
+IF
+ HasItem("scrl6j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6j")
+END
+
+IF
+ HasItem("scrl6k",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6k")
+END
+
+IF
+ HasItem("scrl6l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6l")
+END
+
+IF
+ HasItem("scrl6m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6m")
+END
+
+IF
+ HasItem("scrl6n",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6n")
+END
+
+IF
+ HasItem("scrl6o",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6o")
+END
+
+IF
+ HasItem("scrl6p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6p")
+END
+
+IF
+ HasItem("scrl6q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6q")
+END
+
+IF
+ HasItem("scrl6r",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6r")
+END
+
+IF
+ HasItem("scrl6s",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6s")
+END
+
+IF
+ HasItem("scrl6t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6t")
+END
+
+IF
+ HasItem("scrl6u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6u")
+END
+
+IF
+ HasItem("scrl6w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6w")
+END
+
+IF
+ HasItem("scrl6x",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6x")
+END
+
+IF
+ HasItem("scrl6y",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6y")
+END
+
+IF
+ HasItem("scrl6z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl6z")
+END
+
+IF
+ HasItem("scrl70",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl70")
+END
+
+IF
+ HasItem("scrl71",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl71")
+END
+
+IF
+ HasItem("scrl72",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl72")
+END
+
+IF
+ HasItem("scrl73",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl73")
+END
+
+IF
+ HasItem("scrl75",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl75")
+END
+
+IF
+ HasItem("scrl76",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl76")
+END
+
+IF
+ HasItem("scrl77",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl77")
+END
+
+IF
+ HasItem("scrl78",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl78")
+END
+
+IF
+ HasItem("scrl79",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl79")
+END
+
+IF
+ HasItem("scrl7b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7b")
+END
+
+IF
+ HasItem("scrl7c",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7c")
+END
+
+IF
+ HasItem("scrl7d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7d")
+END
+
+IF
+ HasItem("scrl7e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7e")
+END
+
+IF
+ HasItem("scrl7f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7f")
+END
+
+IF
+ HasItem("scrl7g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7g")
+END
+
+IF
+ HasItem("scrl7h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7h")
+END
+
+IF
+ HasItem("scrl7i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7i")
+END
+
+IF
+ HasItem("scrl7j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7j")
+END
+
+IF
+ HasItem("scrl7k",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7k")
+END
+
+IF
+ HasItem("scrl7l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7l")
+END
+
+IF
+ HasItem("scrl7m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7m")
+END
+
+IF
+ HasItem("scrl7o",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7o")
+END
+
+IF
+ HasItem("scrl7p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7p")
+END
+
+IF
+ HasItem("scrl7q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7q")
+END
+
+IF
+ HasItem("scrl7r",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7r")
+END
+
+IF
+ HasItem("scrl7s",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7s")
+END
+
+IF
+ HasItem("scrl7t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7t")
+END
+
+IF
+ HasItem("scrl7u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7u")
+END
+
+IF
+ HasItem("scrl7v",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7v")
+END
+
+IF
+ HasItem("scrl7w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7w")
+END
+
+IF
+ HasItem("scrl7x",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7x")
+END
+
+IF
+ HasItem("scrl7y",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7y")
+END
+
+IF
+ HasItem("scrl7z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl7z")
+END
+
+IF
+ HasItem("scrl80",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl80")
+END
+
+IF
+ HasItem("scrl81",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl81")
+END
+
+IF
+ HasItem("scrl82",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl82")
+END
+
+IF
+ HasItem("scrl83",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl83")
+END
+
+IF
+ HasItem("scrl84",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl84")
+END
+
+IF
+ HasItem("scrl85",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl85")
+END
+
+IF
+ HasItem("scrl86",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl86")
+END
+
+IF
+ HasItem("scrl87",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl87")
+END
+
+IF
+ HasItem("scrl89",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl89")
+END
+
+IF
+ HasItem("scrl8a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8a")
+END
+
+IF
+ HasItem("scrl8b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8b")
+END
+
+IF
+ HasItem("scrl8c",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8c")
+END
+
+IF
+ HasItem("scrl8d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8d")
+END
+
+IF
+ HasItem("scrl8e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8e")
+END
+
+IF
+ HasItem("scrl8f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8f")
+END
+
+IF
+ HasItem("scrl8g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8g")
+END
+
+IF
+ HasItem("scrl8h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8h")
+END
+
+IF
+ HasItem("scrl8i",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8i")
+END
+
+IF
+ HasItem("scrl8j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8j")
+END
+
+IF
+ HasItem("scrl8l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8l")
+END
+
+IF
+ HasItem("scrl8m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8m")
+END
+
+IF
+ HasItem("scrl8n",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8n")
+END
+
+IF
+ HasItem("scrl8o",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8o")
+END
+
+IF
+ HasItem("scrl8p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8p")
+END
+
+IF
+ HasItem("scrl8q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8q")
+END
+
+IF
+ HasItem("scrl8r",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8r")
+END
+
+IF
+ HasItem("scrl8s",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8s")
+END
+
+IF
+ HasItem("scrl8t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8t")
+END
+
+IF
+ HasItem("scrl8u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8u")
+END
+
+IF
+ HasItem("scrl8v",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8v")
+END
+
+IF
+ HasItem("scrl8w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8w")
+END
+
+IF
+ HasItem("scrl8x",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8x")
+END
+
+IF
+ HasItem("scrl8y",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8y")
+END
+
+IF
+ HasItem("scrl8z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl8z")
+END
+
+IF
+ HasItem("scrl90",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl90")
+END
+
+IF
+ HasItem("scrl91",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl91")
+END
+
+IF
+ HasItem("scrl92",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl92")
+END
+
+IF
+ HasItem("scrl93",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl93")
+END
+
+IF
+ HasItem("scrl94",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl94")
+END
+
+IF
+ HasItem("scrl95",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl95")
+END
+
+IF
+ HasItem("scrl96",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl96")
+END
+
+IF
+ HasItem("scrl97",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl97")
+END
+
+IF
+ HasItem("scrl98",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl98")
+END
+
+IF
+ HasItem("scrl99",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl99")
+END
+
+IF
+ HasItem("scrl9a",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9a")
+END
+
+IF
+ HasItem("scrl9b",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9b")
+END
+
+IF
+ HasItem("scrl9c",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9c")
+END
+
+IF
+ HasItem("scrl9d",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9d")
+END
+
+IF
+ HasItem("scrl9e",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9e")
+END
+
+IF
+ HasItem("scrl9f",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9f")
+END
+
+IF
+ HasItem("scrl9g",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9g")
+END
+
+IF
+ HasItem("scrl9h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9h")
+END
+
+IF
+ HasItem("scrl9j",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9j")
+END
+
+IF
+ HasItem("scrl9l",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9l")
+END
+
+IF
+ HasItem("scrl9m",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9m")
+END
+
+IF
+ HasItem("scrl9n",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9n")
+END
+
+IF
+ HasItem("scrl9p",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9p")
+END
+
+IF
+ HasItem("scrl9q",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9q")
+END
+
+IF
+ HasItem("scrl9r",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9r")
+END
+
+IF
+ HasItem("scrl9s",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9s")
+END
+
+IF
+ HasItem("scrl9t",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9t")
+END
+
+IF
+ HasItem("scrl9u",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9u")
+END
+
+IF
+ HasItem("scrl9v",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9v")
+END
+
+IF
+ HasItem("scrl9w",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9w")
+END
+
+IF
+ HasItem("scrl9x",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9x")
+END
+
+IF
+ HasItem("scrl9y",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9y")
+END
+
+IF
+ HasItem("scrl9z",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrl9z")
+END
+
+IF
+ HasItem("scrla1",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla1")
+END
+
+IF
+ HasItem("scrla2",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla2")
+END
+
+IF
+ HasItem("scrla3",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla3")
+END
+
+IF
+ HasItem("scrla4",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla4")
+END
+
+IF
+ HasItem("scrla5",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla5")
+END
+
+IF
+ HasItem("scrla6",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla6")
+END
+
+IF
+ HasItem("scrla7",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla7")
+END
+
+IF
+ HasItem("scrla8",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrla8")
+END
+
+IF
+ HasItem("scrlai",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlai")
+END
+
+IF
+ HasItem("scrlaj",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlaj")
+END
+
+IF
+ HasItem("scrlak",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlak")
+END
+
+IF
+ HasItem("scrlal",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlal")
+END
+
+IF
+ HasItem("scrlam",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlam")
+END
+
+IF
+ HasItem("scrlan",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlan")
+END
+
+IF
+ HasItem("scrlao",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlao")
+END
+
+IF
+ HasItem("scrlb1",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlb1")
+END
+
+IF
+ HasItem("scrlb2",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlb2")
+END
+
+IF
+ HasItem("scrlb4",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlb4")
+END
+
+IF
+ HasItem("scrlpet",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlpet")
+END
+
+IF
+ HasItem("scrlsd",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlsd")
+END
+
+IF
+ HasItem("scrlzz",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("scrlzz")
+END
+
+IF
+ HasItem("shld02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld28")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld29")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld30")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("shld32",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("shld32")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("slng10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("slng10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sper12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sper12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf23",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf23")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("staf24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("staf24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h22",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h22")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h24",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h24")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h25",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h25")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h27",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h27")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h28",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h28")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h29",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h29")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h30",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h30")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h31",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h31")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h32",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h32")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h33",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h33")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h34",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h34")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h35",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h35")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h36",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h36")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h37",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h37")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h38",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h38")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h39",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h39")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h40",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h40")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h41",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h41")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h42",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h42")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h44",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h44")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h45",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h45")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h47",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h47")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h49",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h49")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h50",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h50")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h51",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h51")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h52",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h52")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h53",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h53")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h54",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h54")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h55",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h55")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h58",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h58")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h59",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h59")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h60",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h60")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h61",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h61")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h62",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h62")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h63",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h63")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h64",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h64")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h65",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h65")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h66",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h66")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h67",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h67")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h69",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h69")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h70",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h70")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h71",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h71")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h72",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h72")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h73",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h73")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h74",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h74")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h75",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h75")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h76",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h76")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw1h77",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw1h77")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2amu",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2amu")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2dak",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2dak")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2halb",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2halb")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2harp",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2harp")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2helm",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2helm")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2plat",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2plat")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2ring",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2ring")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2robe",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2robe")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2s1h",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2s1h")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wa2shiel",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wa2shiel")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h11",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h11")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h14",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h14")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h15",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h15")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h17",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h17")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h20",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h20")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h21",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h21")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2h99",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2h99")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("sw2hdeat",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("sw2hdeat")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand02",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand02")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand03",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand03")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand04",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand04")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand05",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand05")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand06",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand06")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand07",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand07")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand08",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand08")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand09",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand09")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand10",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand10")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand12",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand12")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand13",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand13")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand16",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand16")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand18",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand18")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("wand19",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("wand19")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("miscbc",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("miscbc")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+IF
+ HasItem("jkvahl",Myself)
+THEN
+ RESPONSE #100
+  DestroyItem("jkvahl")
+  GiveItemCreate("kkdust","kindrek",0,0,0)
+END
+
+
+
+IF
+ DEAD("Kindrek")
+THEN
+ RESPONSE #100
+ GivePartyAllEquipment()LeaveParty()
+END
+
+
+
+IF
+  InParty(Myself)
+  PartyHasItem("clck03")
+  Global("KKDestroyDisplacementCloakTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+   SetGlobal("KKDestroyDisplacementCloakTOB","LOCALS",1)
+END
+
+
+
+IF
+  InParty(Myself)
+  PartyHasItem("clck24")
+  Global("KKDestroyReflectionCloakTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+   SetGlobal("KKDestroyReflectionCloakTOB","LOCALS",1)
+END
+
+
+
+IF
+  InParty(Myself)
+  PartyHasItem("clck26")
+  Global("KKDestroyMirroringCloakTOB","LOCALS",0)
+THEN
+ RESPONSE #100
+   SetGlobal("KKDestroyMirroringCloakTOB","LOCALS",1)
+END

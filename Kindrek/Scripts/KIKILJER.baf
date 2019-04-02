@@ -1,0 +1,16 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("KINDREK")
+		Wait(1)
+		MoveToObject("Jermien")
+		SmallWait(5)
+		FaceObject("Jermien")
+		SmallWait(5)
+		Attack("Jermien")
+		SmallWait(5)
+		Kill("Jermien")
+		Wait(1)
+		EndCutSceneMode()
+END

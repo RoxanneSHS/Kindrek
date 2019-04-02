@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("KKCIAN")
+		Wait(1)
+		SmallWait(5)
+		FaceObject("Kindrek")
+		SmallWait(5)
+		ActionOverride("Kindrek",FaceObject("KKCIAN"))
+                ActionOverride("Kindrek",LeaveParty())
+		Wait(2)
+		AttackOneRound("Kindrek")
+		Kill("Kindrek")
+		Wait(1)
+		EndCutSceneMode()
+END

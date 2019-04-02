@@ -1,0 +1,11 @@
+IF
+  Global("KindrekExists","AR0020",0)
+  !Class(Player1,MAGE_ALL)
+  !Class(Player1,SORCERER)
+  !Class(Player1,BARD)
+THEN
+ RESPONSE #100
+  SetGlobal("KindrekExists","AR0020",1)
+  CreateCreature("Kindrek",[869.395],7)
+  Continue()
+END

@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("KINDREK")
+		Wait(1)
+		MoveToObject("EDWIN")
+		SmallWait(5)
+		FaceObject("EDWIN")
+		SmallWait(5)
+		ActionOverride("EDWIN",FaceObject("KINDREK"))
+                ActionOverride("EDWIN",ReallyForceSpell(Myself,WIZARD_STONE_SKIN))
+                ActionOverride("EDWIN",ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS))
+                ActionOverride("EDWIN",ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE))
+                ActionOverride("EDWIN",ReallyForceSpell(Myself,WIZARD_ARMOR))
+                Attack("EDWIN")
+		SmallWait(10)
+		Kill("EDWIN")
+		Wait(1)
+		EndCutSceneMode()
+END

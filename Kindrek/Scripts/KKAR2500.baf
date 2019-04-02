@@ -1,0 +1,21 @@
+IF
+  PartyHasItem("MISCAU")
+  InParty("Kindrek")
+  Global("PrenashExists","AR2500",0)
+THEN
+ RESPONSE #100
+  SetGlobal("PrenashExists","AR2500",1)
+  CreateCreature("PRENASH",[107.1074],11)
+  Continue()
+END
+
+IF
+  PartyHasItem("MISCAU")
+  GlobalLT("PrengoonSpawned","AR2500",5)
+  InParty("Kindrek")
+THEN
+ RESPONSE #100
+  CreateCreature("PRENGOON",[354.1000],11)
+  IncrementGlobal("PrengoonSpawned","AR2500",1)
+  Continue()
+END

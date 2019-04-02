@@ -1,0 +1,9 @@
+IF
+  PartyHasItem("ring39")
+  InParty("Kindrek")
+  Global("KKVeigleExists","AR0330",0)
+THEN
+ RESPONSE #100
+ SetGlobal("KKVeigleExists","AR0330",1)
+ CreateCreature("KKVEIGLE",[364.315],5)
+END
