@@ -25,6 +25,8 @@ LANGUAGE ~English~ ~english~
          ~Kindrek\english\setup.tra~
 LANGUAGE ~Russian (translation by iopden, anymale & aerie.ru)~ ~russian~
          ~Kindrek\russian\setup.tra~
+LANGUAGE ~Schinese~ ~schinese~
+         ~Kindrek\schinese\setup.tra~
 
 BEGIN @0
 
